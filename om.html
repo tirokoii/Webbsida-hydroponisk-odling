@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: none;
+            padding: 0;
+            border: none;
+            background: none;
+            font-size: 19px;
+        }
+
+        button:hover {
+            color: #ff6262;
+            text-decoration: underline;
+            transition-duration:  0.4s;
+        }
+
+        #bildJag {
+            display: none;
+            padding-top: 60px;
+            text-align: center;
+            padding-left: 30%;
+            padding-right: 30%;
+        }
+
+    </style>
+</head>
+<div class="header">
+    <h1>OM WEBBSIDAN</h1>
+</div>
+
+<body>
+
+    <div class="navigation">
+        <a href="start.html"><img class="navImage" src="hus.png" alt="hem">Hem</a>
+        <a href="statistik.html" taget="_blank"><img class="navImage" src="stat.png" alt="statistik">Statistik</a>
+        <a href="bilder.html"><img class="navImage" src="foto.png" alt="kamera">Bilder</a>
+        <a href="om.html" class="right"><img class="navImage" src="Info.png" alt="info">Om</a>
+        <a href="tomat.html"><img class="navImage" src="tomatNav.png" alt="tomatimage">Tomat</a>
+    </div>
+
+    <div class="bröd">
+        <h1>Lite information</h1>
+        <p>Hej, jag heter Tilli och går första året på teknik-linjen på NTI-skolan i Umeå. Denna webbsida är skapad för ett skolprojekt där vi skulle jobba med en valfri teknik process, då valde jag att summera den data jag samlat från ett annat projekt vi hade gjort tidgare. Nämligen projekt hydroponisk odling.</p>
+        <p>Vill du se en "väldigt" riktig bild på mig. Tryck på <button onclick="ShowMe()">fin Bild</button> för att se fin bild.</p>
+        <div id="bildJag">
+            <img src="BildJag.png" alt="Fin bild på skaparen">
+            <p>Du kan även ta bort bilden genom att trycka på fin bild igen</p>
+        </div>
+
+        <div>
+            <p class="tran"></p>
+            <h3>HTML, CSS och javascript</h1>
+            <p>HTML eller Hyper Text markup Language har jag använt för att bygga up webbsida. Men för att ge sidan en gemensam stil använder jag CSS. Cascading Style Sheet jobbar med kategorier som man senare kan skriva in i HTML koden för att slippa skriva ut stilen och layouten för varje ny del av webbsidan, det gör det också enklare att ändra stilen senare. Javascript kan man senare använda för att skapa animationer eller andra interaktioner så som "fin bild" knappen du såg däruppe, utan javascript som sa åt den att under ett visst förhållande skulle  den vissa och gömma bilden skulle det inte hända.</p>
+            <p>Tack!</p>
+        </div>
+    </div>
+
+    <div class="ref">
+        <p class="tran">...</p>
+        <a class="ref" href="https://github.com/tirokoii"><img class="img" src="git.png" alt="github">GitHub</a>
+        <a class="ref" href="mailto: tilli.edstrom@elev.ga.ntig.se"><img class="img" src="mail.png" alt="mail">tilli.edstrom@elev.ga.ntig.se</a>
+    </div>
+
+
+      <script>
+
+        function ShowMe() {
+            var container = document.getElementById('bildJag');
+            if (container.style.display === "none") {
+            container.style.display = "block";
+        } else {
+            container.style.display = "none";
+    }
+}
+
+      </script>
+      
+</body>
+</html>

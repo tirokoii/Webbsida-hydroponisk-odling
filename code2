@@ -1,0 +1,15 @@
+  <div class="bröd">
+  <div class="navbars">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <strong class="fa fa-caret-down">Växter</strong>
+        </button>
+        <div class="dropdown-content">
+          <button class="gram1">Tomat</button>
+          <button class="gram2">Gurka</button>
+          <button class="gram3">Chilli</button>
+          <button class="gram4">Sallat</button>
+        </div>
+      </div> 
+    </div>
+</div>
