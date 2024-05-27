@@ -13,7 +13,7 @@
   .img {
     max-width: 2%;
     max-height: 2%;
-    padding-right:4px;
+    padding-right:3px;
   }
 
   .navImage {
@@ -101,7 +101,7 @@
   }
   
   .ref {
-    padding: 1px 160px;
+    padding: 1px 150px;
     padding-bottom: 60px;
     text-align: center;
     background: rgb(31, 32, 31);
