@@ -332,3 +332,15 @@
     cursor: pointer;
     transition: all 0.2s ease;
 }
+
+.webbsites {
+  text-decoration: none;
+  size: 10px;
+  color: #000;
+}
+
+.webbsites:hover {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #24b7b0;
+}

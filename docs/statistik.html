@@ -15,7 +15,7 @@
 
     <div class="navigation">
       <a href="index.html"><img class="navImage" src="hus.png" alt="hem">Hem</a>
-      <a href="statistik.html" taget="_blank"><img class="navImage" src="stat.png" alt="statistik">Statistik</a>
+      <a href="statistik.html"><img class="navImage" src="stat.png" alt="statistik">Statistik</a>
       <a href="bilder.html"><img class="navImage" src="foto.png" alt="kamera">Bilder</a>
       <a href="om.html" class="right"><img class="navImage" src="Info.png" alt="info">Om</a>
       <a href="tomat.html"><img class="navImage" src="tomatNav.png" alt="tomatimage">Tomat</a>
@@ -33,10 +33,10 @@
               <strong class="fa fa-caret-down">Växter</strong>
             </button>
             <div class="dropdown-content">
-              <button onclick="showTomat()" >Tomat</button>
-              <button onclick="showGurka()" >Gurka</button>
-              <button onclick="showChilli()" >Chilli</button>
-              <button onclick="showSallat()" >Sallat</button>
+              <button onclick="show()" >Tomat</button>
+              <button onclick="show()" >Gurka</button>
+              <button onclick="show()" >Chilli</button>
+              <button onclick="show()" >Sallat</button>
           </div>
       </div>
     </div> 
@@ -59,103 +59,121 @@
     
         <script>
           
+           
           function showTomat() {
-            
-            var image = document.getElementById('diagramTomat')
-            image.className = "imageShow"; //fix problem with images appering in beginning by making two css styles//
-            
-            document.getElementById('diagramTomat')
-                diagramTomat.style.display = "block";
+           
+           var image = document.getElementById('diagramTomat')
+           image.className = "imageShow"; //fix problem with images appering in beginning by making two css styles//
+          
+           document.getElementById('diagramTomat')
+               diagramTomat.style.display = "block";
 
-            if (diagramGurka.style.display === "block") {
-              diagramGurka.style.display = "none";
-              diagramTomat.style.display = "block";
-            } 
 
-            if (diagramChilli.style.display === "block") {
-              diagramChilli.style.display = "none";
-              diagramTomat.style.display = "block";
-            } 
+           if (diagramGurka.style.display === "block") {
+             diagramGurka.style.display = "none";
+             diagramTomat.style.display = "block";
+           }
 
-            if (diagramSallat.style.display === "block") {
-              diagramSallat.style.display = "none";
-              diagramTomat.style.display = "block";
-            } 
 
-          }
+           if (diagramChilli.style.display === "block") {
+             diagramChilli.style.display = "none";
+             diagramTomat.style.display = "block";
+           }
 
-          function showGurka() {
 
-            var image = document.getElementById('diagramGurka')
-            image.className = "imageShow";
-            
-            document.getElementById('diagramGurka')
-                diagramGurka.style.display = "block";
+           if (diagramSallat.style.display === "block") {
+             diagramSallat.style.display = "none";
+             diagramTomat.style.display = "block";
+           }
 
-            if (diagramTomat.style.display === "block") {
-              diagramTomat.style.display = "none";
-              diagramGurka.style.display = "block";
-            } 
 
-            if (diagramChilli.style.display === "block") {
-              diagramChilli.style.display = "none";
-              diagramGurka.style.display = "block";
-            } 
+         }
 
-            if (diagramSallat.style.display === "block") {
-              diagramSallat.style.display = "none";
-              diagramGurka.style.display = "block";
-            } 
 
-          }
+         function showGurka() {
 
-          function showChilli() {
 
-            var image = document.getElementById('diagramChilli')
-            image.className = "imageShow";
+           var image = document.getElementById('diagramGurka')
+           image.className = "imageShow";
+          
+           document.getElementById('diagramGurka')
+               diagramGurka.style.display = "block";
 
-            document.getElementById('diagramChilli')
-                diagramChilli.style.display = "block";
 
-            if (diagramTomat.style.display === "block") {
-              diagramTomat.style.display = "none";
-              diagramChilli.style.display = "block";
-            } 
-            
-            if (diagramSallat.style.display === "block") {
-              diagramSallat.style.display = "none";
-              diagramChilli.style.display = "block";
-            } 
+           if (diagramTomat.style.display === "block") {
+             diagramTomat.style.display = "none";
+             diagramGurka.style.display = "block";
+           }
 
-            if (diagramGurka.style.display === "block") {
-              diagramGurka.style.display = "none";
-              diagramChilli.style.display = "block";
-            } 
-          }
 
-          function showSallat() {
+           if (diagramChilli.style.display === "block") {
+             diagramChilli.style.display = "none";
+             diagramGurka.style.display = "block";
+           }
 
-            var image = document.getElementById('diagramSallat')
-            image.className = "imageShow";
-  
-            document.getElementById('diagramSallat')
-                diagramSallat.style.display = "block";
 
-            if (diagramTomat.style.display === "block") {
-              diagramTomat.style.display = "none";
-              diagramSallat.style.display = "block";
-            } 
-            
-            if (diagramChilli.style.display === "block") {
-              diagramChilli.style.display = "none";
-              diagramSallat.style.display = "block";
-            } 
+           if (diagramSallat.style.display === "block") {
+             diagramSallat.style.display = "none";
+             diagramGurka.style.display = "block";
+           }
 
-            if (diagramGurka.style.display === "block") {
-              diagramGurka.style.display = "none";
-              diagramSallat.style.display = "block";
-            } 
-          }
+
+         }
+
+         function showChilli() {
+
+           var image = document.getElementById('diagramChilli')
+           image.className = "imageShow";
+
+
+           document.getElementById('diagramChilli')
+               diagramChilli.style.display = "block";
+
+
+           if (diagramTomat.style.display === "block") {
+             diagramTomat.style.display = "none";
+             diagramChilli.style.display = "block";
+           }
+          
+           if (diagramSallat.style.display === "block") {
+             diagramSallat.style.display = "none";
+             diagramChilli.style.display = "block";
+           }
+
+
+           if (diagramGurka.style.display === "block") {
+             diagramGurka.style.display = "none";
+             diagramChilli.style.display = "block";
+           }
+         }
+
+
+         function showSallat() {
+
+
+           var image = document.getElementById('diagramSallat')
+           image.className = "imageShow";
+
+           document.getElementById('diagramSallat')
+               diagramSallat.style.display = "block";
+
+
+           if (diagramTomat.style.display === "block") {
+             diagramTomat.style.display = "none";
+             diagramSallat.style.display = "block";
+           }
+          
+           if (diagramChilli.style.display === "block") {
+             diagramChilli.style.display = "none";
+             diagramSallat.style.display = "block";
+           }
+
+
+           if (diagramGurka.style.display === "block") {
+             diagramGurka.style.display = "none";
+             diagramSallat.style.display = "block";
+           }
+         }
 
         </script>
 
