@@ -1,346 +1,351 @@
 
+/*Big text thingy and the overall website look*/
+
 .header {
-    text-align: center;
-    margin: 0%;
-    background-image: url(bak.png);
-    padding: 15px;
-  }
+  text-align: center;
+  margin: 0%;
+  background-image: url(bak.png);
+  padding: 15px;
+}
 
-  .header h1 {
-    font-size: 50px;
-  }
+.header h1 {
+  font-size: 50px;
+}
 
-  .img {
-    max-width: 2%;
-    max-height: 2%;
-    padding-right:3px;
-  }
-
-  .navImage {
-    width: 20px;
-    height: 15px;
-    margin: 0%;
-    display: inline-flex;
-    padding-right: 4px;
-  }
-
-  body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color:#ffffff;
-    background-color: #3AAFA9;
-    margin: 0%;
-  }
-  
-  main {
-    max-width: 100rem;
-    flex: 70%;
-    background-color: #FEFFFF;
-    margin: 0%;
-  }
-  
-  .navigation {
-    overflow: hidden;
-    background-color: #17252A;
-    margin: 0%; 
-    box-shadow: 0px 0px 20px 1px #205c59;
-    width: 100%;
-  }
-  
-  .navigation a {
-    float: left;
-    display: left;
-    color: #FEFFFF;
-    text-align: center;
-    list-style: none;
-    padding: 14px 40px;
-    list-style: none;
-    text-decoration: none;
-    gap: 0rem;
-    margin: 0%;
-  }
-  
-  .navigation a.right {
-    float: right;
-  }
-  
-  .navigation a:hover {
-    background-color: #2b2b2b;
-    color: rgb(218, 218, 218);
-    margin: 0%;
-    transition-duration: 0.4s;
-    filter: invert(100);
-  }
-  
-    * {
-      box-sizing:border-box;
-      overflow: auto;
-    }
-  
-    .row {
-      display:flex;
-      flex-wrap: wrap;
-      margin: 0%;
-    }
-  
-  @media screem and (max-width:400px) {
-    .navigation a {
-      float: none;
-      width: 100%;
-      margin: 0%;
-    }
-  }
-
-  .ex {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .ref {
-    padding: 1px 150px;
-    padding-bottom: 60px;
-    text-align: center;
-    background: rgb(31, 32, 31);
-    color: rgb(224, 224, 224);
-    margin: 0%;
-    text-decoration: none;
-    overflow-y: hidden;
-  }
+  font-size: 20px;
+  text-align: center;
+  color:#ffffff;
+  background-color: #3AAFA9;
+  margin: 0%;
+}
 
-  .bröd {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      padding: 100px;
-      text-align: left;
-      background-color: #e7efef;
-      background-size: contain;
-      color: #000;
-      margin: 10%;
-      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-  }
+main {
+  max-width: 100rem;
+  flex: 70%;
+  background-color: #FEFFFF;
+  margin: 0%;
+}
 
-  .tran {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      padding: 20px;
-      text-align: center;
-      color: rgba(154, 157, 145, 0);
-      list-style: none;
-  }
 
-  .side2 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+/*Main Navigation bar*/
+
+.navImage {
+  width: 15px;
+  height: 15px;
+  margin: 0%;
+  display: inline-flex;
+  padding-right: 4px;
+}
+
+.navigation {
+  overflow: hidden;
+  background-color: #17252A;
+  margin: 0%; 
+  box-shadow: 0px 0px 20px 1px #205c59;
+  width: 100%;
+}
+
+.navigation a {
+  float: left;
+  display: left;
+  color: #FEFFFF;
+  text-align: center;
+  list-style: none;
+  padding: 14px 40px;
+  list-style: none;
+  text-decoration: none;
+  gap: 0rem;
+  margin: 0%;
+}
+
+.navigation a.right {
+  float: right;
+}
+
+.navigation a:hover {
+  background-color: #2b2b2b;
+  color: rgb(218, 218, 218);
+  margin: 0%;
+  transition-duration: 0.4s;
+  filter: invert(100);
+} 
+
+
+/*White box and text*/
+
+.ex {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.bröd {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: right;
-    color: #000000;
-    background-color: transparent;
-    margin: 0%;
-    padding-top: px; 
-    font-size: 15px; 
-  }
-
-  a:hover {
-    color: #89a78c;
-    text-decoration: underline;
-    transition-duration: 0.4s;
-  }
-
-  a:active {
-    color: #1e8c7f;
-    text-decoration: none;
-  }
-
-  .navbar {
-    padding: 0;
-    font-family: Arial, Helveticba, sans-serif;
-    margin: 0%;
-    background-color: transparent;
-    border: none;
-  }
-  
-  .navbar button {
-    float: bottom;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    background-color: transparent;
-    border-width: 0;
-    font-family: inherit;
-    font-size: 16px;
-    font-style: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    padding: 14px 18.8px;
+    padding: 100px;
+    text-align: left;
+    background-color: #e7efef;
+    background-size: contain;
+    color: #000;
+    margin: 10%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-    padding-bottom: 60px;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px; 
-    border: 3px solid #f0f0f0;
-    outline: none;
-    background-color: #24b7b0 ;
-    color: rgb(255, 255, 255);
-    padding: 14px 16px;
+}
+
+.tran { /*invisable text*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    text-align: center;
+    color: rgba(154, 157, 145, 0);
+    list-style: none;
     margin: 0;
-  }
-  
-  .navbar button:hover, .dropdown:hover .dropbtn {
-    border: 3px solid #1e8c7f;
-    margin: 0;
-    transition-duration: 0.3s;
-    overflow: hidden;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f0f0f0;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    overflow: hidden;
-  }
-  
-  .dropdown-content button {
-    float: left;
-    color: black;
-    display: block;
-    text-align: center;
-    overflow: hidden;
-    padding: none;
-  }
-  
-  .dropdown-content button:hover {
-    background-color: #ececec;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+}
 
-  #image {
-    display: none;
-  }
+.side2 { /*Year*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: right;
+  color: #000000;
+  background-color: transparent;
+  margin: 0%;
+  padding-top: px; 
+  font-size: 15px; 
+}
 
-  .image {
-    max-width: 0%;
-    max-height: 0%;
-    padding-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
-  }
 
-  .imageShow {
-    max-width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #b2b2b2;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  }
+/*Mail and Github*/
 
-  .container {
-    position: relative;
-    background-color: #24b7b0;
-    cursor: pointer;
-    border: 5px solid #17252A;
-    border-radius: 20px;
-    max-width: 30%;
-    margin: 10px;
-    float: left;
-    text-align: center;
-  }
+.ref {
+  background: rgb(31, 32, 31);
+  color: rgb(224, 224, 224);
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  margin-top: 1%;
+}
 
-  .bild {
-    max-width: 100%;
-    overflow: hidden;
-    display: block;
-  }
+.img {
+  margin-right: 0.5%;
+  width: 20px;
+}
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+a:hover {
+  color: #89a78c;
+  text-decoration: underline;
+  transition-duration: 0.4s;
+}
 
-  .container:hover .overlay{
-    opacity: 1;
-    transition: opacity 0.3s ease;
-  }
+a:active {
+  color: #1e8c7f;
+  text-decoration: none;
+}
 
-  .text {
-    color: white;
-    text-align: center;
-    font-size: inherit;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
 
-  .wrapper {
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    max-width: 400px;
-    width: 100%;
-    background-size: cover;
-    background-image: url(bakground.png);
-    border-radius: 8px;
-    padding: 15px 20px 20px;
-    display: block;
-  }
+/*Navbar in Statistik*/
 
-  .image2 {
-    width: 30%;
-    height: 30%;
+.navbar { 
+  padding: 0;
+  font-family: Arial, Helveticba, sans-serif;
+  background-color: transparent;
+  border: none;
+}
+
+.navbar button {
+  float: bottom;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background-color: transparent;
+  border-width: 0;
+  padding: 14px 18.8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: 3px solid #f0f0f0;
+  outline: none;
+  background-color: #24b7b0 ;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  margin: 0;
+}
+
+.navbar button:hover, .dropdown:hover .dropbtn {
+  border: 3px solid #1e8c7f;
+  margin: 0;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.dropdown-content button:hover {
+  background-color: #ececec;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.image {
+  max-width: 0%;
+  max-height: 0%;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.imageShow {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #b2b2b2;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*bilder*/
+
+.container { /*Thingy holding the picture in place*/
+  position: relative;
+  background-color: #24b7b0;
+  cursor: pointer;
+  border: 5px solid #17252A;
+  border-radius: 20px;
+  max-width: 30%;
+  margin: 10px;
+  float: left;
+  text-align: center;
+}
+
+.bild { /*Style on picture*/
+  max-width: 100%;
+  overflow: hidden;
+  display: block;
+  border-radius: 15px;
+}
+
+.overlay { /*overlay of the picture*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.container:hover .overlay{
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  font-size: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  max-width: 400px;
+  width: 100%;
+  background-size: cover;
+  background-image: url(bakground.png);
+  border-radius: 8px;
+  padding: 15px 20px 20px;
+  display: block;
+}
+
+/*Cookie monster*/
+
+.image2 {
+  width: 30%;
+  height: 30%;
+  border-radius: 15px;
 }
 
 .ok {
-    text-decoration: none;
-    padding: 10px;
-    padding-right: 50px;
-    padding-left: 50px;
-    border: none;
-    font-size: 15px;
-    border-radius: 15px;
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border: none;
+  font-size: 15px;
+  border-radius: 15px;
 }
 
 .ok:hover {
-    background-color: #102d23;
-    color: rgb(244, 244, 244);
-    cursor: pointer;
-    transition: all 0.2s ease;
+  background-color: #102d23;
+  color: rgb(244, 244, 244);
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
+/*hover effect on Om page (webbsites and sources)*/
 .webbsites {
-  text-decoration: none;
-  size: 10px;
-  color: #000;
+text-decoration: none;
+size: 10px;
+color: #000;
 }
 
 .webbsites:hover {
-  cursor: pointer;
-  transition: all 0.2s ease;
-  color: #24b7b0;
+cursor: pointer;
+transition: all 0.2s ease;
+color: #24b7b0;
 }
+
+@media screen {
+  .header {
+    padding: 10px;
+  } 
+
+  .header h1 {
+    font-size: 35px;
+  }
+
+  
+  .navigation a .navigation a.right {
+    float: none;
+    text-align: center;
+  }
+  .navImage {
+    width: 13px;
+  }
+}
+
+
+

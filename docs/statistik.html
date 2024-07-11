@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en, sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,8 +17,8 @@
       <a href="index.html"><img class="navImage" src="hus.png" alt="hem">Hem</a>
       <a href="statistik.html"><img class="navImage" src="stat.png" alt="statistik">Statistik</a>
       <a href="bilder.html"><img class="navImage" src="foto.png" alt="kamera">Bilder</a>
-      <a href="om.html" class="right"><img class="navImage" src="Info.png" alt="info">Om</a>
       <a href="tomat.html"><img class="navImage" src="tomatNav.png" alt="tomatimage">Tomat</a>
+      <a href="om.html" class="right"><img class="navImage" src="Info.png" alt="info">Om</a>
     </div>
 
     <div>
@@ -32,17 +32,17 @@
             <button class="dropbtn">
               <strong class="fa fa-caret-down">Växter</strong>
             </button>
-            <div class="dropdown-content">
-              <button onclick="show()" >Tomat</button>
-              <button onclick="show()" >Gurka</button>
-              <button onclick="show()" >Chilli</button>
-              <button onclick="show()" >Sallat</button>
-          </div>
+            <div class="dropdown-content"> <!--The buttons that you click-->
+              <button onclick="showTomat()" >Tomat</button>
+              <button onclick="showGurka()" >Gurka</button>
+              <button onclick="showChilli()" >Chilli</button>
+              <button onclick="showSallat()" >Sallat</button>
+            </div>
       </div>
     </div> 
     
-        <div>
-          <img class="image" id="diagramTomat" src="Statistik Tomat.svg" alt="tomat"/>
+        <div> <!--Images that appear efter-->
+          <img class="image" id="diagramTomat" src="Statistik Tomat.svg" alt="tomat"/> 
           <img class="image" id="diagramGurka" src="Statistik Gurka.svg" alt="gurka"/>
           <img class="image" id="diagramChilli" src="Statistik Chilli.svg" alt="chill"/>
           <img class="image" id="diagramSallat" src="Statistik Sallat.svg" alt="sallat"/>
@@ -55,127 +55,72 @@
       <p class="tran">...</p>
       <a class="ref" href="https://github.com/tirokoii"><img class="img" src="git.png" alt="github">GitHub</a>
       <a class="ref" href="mailto: tilli.edstrom@elev.ga.ntig.se"><img class="img" src="mail.png" alt="mail">tilli.edstrom@elev.ga.ntig.se</a>
+      <p class="tran">...</p>
     </div>
     
-        <script>
+    <script>
           
-           
-          function showTomat() {
-           
-           var image = document.getElementById('diagramTomat')
-           image.className = "imageShow"; //fix problem with images appering in beginning by making two css styles//
-          
-           document.getElementById('diagramTomat')
-               diagramTomat.style.display = "block";
+      function showTomat() {
+        
+        var image = document.getElementById('diagramTomat')
+        image.className = "imageShow"; //fix problem with images appering in beginning by making two css styles//
+        
+        document.getElementById('diagramTomat')
 
+            diagramTomat.style.display = "block";
 
-           if (diagramGurka.style.display === "block") {
-             diagramGurka.style.display = "none";
-             diagramTomat.style.display = "block";
-           }
+            if (diagramTomat.style.display === "block") {
+              diagramGurka.style.display = "none";
+              diagramSallat.style.display = "none";
+              diagramChill.style.display = "none";
+            } 
+      }
+      function showGurka() {
+        var image = document.getElementById('diagramGurka')
+        image.className = "imageShow";
+        
+        document.getElementById('diagramGurka')
 
+            diagramGurka.style.display = "block";
 
-           if (diagramChilli.style.display === "block") {
-             diagramChilli.style.display = "none";
-             diagramTomat.style.display = "block";
-           }
+        if (diagramTomat.style.display === "block") {
+          diagramTomat.style.display = "none";
+          diagramCilli.style.display = "none";
+          diagramSallat.style.display = "none";
+        } 
+      }
+      function showChilli() {
+        var image = document.getElementById('diagramChilli')
+        image.className = "imageShow";
 
+        document.getElementById('diagramChilli')
 
-           if (diagramSallat.style.display === "block") {
-             diagramSallat.style.display = "none";
-             diagramTomat.style.display = "block";
-           }
+            diagramChilli.style.display = "block";
 
+        if (diagramChilli.style.display === "block") {
+          diagramTomat.style.display = "none";
+          diagramSallat.style.display = "none";
+          diagramGurka.style.display = "none";
+        } 
+        
+      }
+      function showSallat() {
+        var image = document.getElementById('diagramSallat')
+        image.className = "imageShow";
 
-         }
+        document.getElementById('diagramSallat')
 
+            diagramSallat.style.display = "block";
 
-         function showGurka() {
+        if (diagramSallat.style.display === "block") {
+          diagramTomat.style.display = "none";
+          diagramGurka.style.display = "none";
+          diagramChilli.style.display = "none";
+        } 
+      }
 
-
-           var image = document.getElementById('diagramGurka')
-           image.className = "imageShow";
-          
-           document.getElementById('diagramGurka')
-               diagramGurka.style.display = "block";
-
-
-           if (diagramTomat.style.display === "block") {
-             diagramTomat.style.display = "none";
-             diagramGurka.style.display = "block";
-           }
-
-
-           if (diagramChilli.style.display === "block") {
-             diagramChilli.style.display = "none";
-             diagramGurka.style.display = "block";
-           }
-
-
-           if (diagramSallat.style.display === "block") {
-             diagramSallat.style.display = "none";
-             diagramGurka.style.display = "block";
-           }
-
-
-         }
-
-         function showChilli() {
-
-           var image = document.getElementById('diagramChilli')
-           image.className = "imageShow";
-
-
-           document.getElementById('diagramChilli')
-               diagramChilli.style.display = "block";
-
-
-           if (diagramTomat.style.display === "block") {
-             diagramTomat.style.display = "none";
-             diagramChilli.style.display = "block";
-           }
-          
-           if (diagramSallat.style.display === "block") {
-             diagramSallat.style.display = "none";
-             diagramChilli.style.display = "block";
-           }
-
-
-           if (diagramGurka.style.display === "block") {
-             diagramGurka.style.display = "none";
-             diagramChilli.style.display = "block";
-           }
-         }
-
-
-         function showSallat() {
-
-
-           var image = document.getElementById('diagramSallat')
-           image.className = "imageShow";
-
-           document.getElementById('diagramSallat')
-               diagramSallat.style.display = "block";
-
-
-           if (diagramTomat.style.display === "block") {
-             diagramTomat.style.display = "none";
-             diagramSallat.style.display = "block";
-           }
-          
-           if (diagramChilli.style.display === "block") {
-             diagramChilli.style.display = "none";
-             diagramSallat.style.display = "block";
-           }
-
-
-           if (diagramGurka.style.display === "block") {
-             diagramGurka.style.display = "none";
-             diagramSallat.style.display = "block";
-           }
-         }
-
-        </script>
+      </script>
+     
 
 </body>
 </html>
