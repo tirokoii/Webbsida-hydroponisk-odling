@@ -374,13 +374,13 @@ color: #24b7b0;
   }
 
   .navigation a {
-    padding: 14px 25px;
+    padding: 4% 8%;
     float: left;
   }
 
   .navigation a.right {
     float: right;
-    padding: 14px 25px;
+    padding: 4% 8%;
   }
 
   .bröd {
