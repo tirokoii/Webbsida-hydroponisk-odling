@@ -369,20 +369,18 @@ color: #24b7b0;
   }
 
   .navImage {
-    width: 13px;
-    height: 13px;
+    position: static;
+    width: 10px;
+    height: 10px;
   }
 
   .navigation a {
-    padding: 4% 8%;
-    float: left;
+    max-width: 80px;
+    width: 1000px;
+    padding: 15px 20px;
   }
 
-  .navigation a.right {
-    float: right;
-    padding: 4% 10%;
 
-  }
 
   .bröd {
     padding: 40px;
