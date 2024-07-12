@@ -373,14 +373,14 @@ color: #24b7b0;
     height: 13px;
   }
 
-  .navigation a .navigation a.right {
-    float: none;
-    text-align: center;
+  .navigation a {
+    padding: 14px 25px;
+    float: left;
   }
 
   .navigation a.right {
-    position:static;
-    padding: 14px 23px;
+    float: right;
+    padding: 14px 25px;
   }
 
   .bröd {
