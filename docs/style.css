@@ -353,7 +353,7 @@ color: #24b7b0;
 @media only screen and (max-width: 600px)  { /*makes it so that it need to reach a certain condition to be applied*/
 
   .header {
-    padding: 10px;
+    padding: 20px;
   } 
 
   .header h1 {
