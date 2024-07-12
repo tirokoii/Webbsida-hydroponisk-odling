@@ -50,7 +50,6 @@ main {
 
 .navigation a {
   float: left;
-  display: left;
   color: #FEFFFF;
   text-align: center;
   list-style: none;
@@ -75,14 +74,6 @@ main {
 
 
 /*White box and text*/
-
-.ex {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding: 10px;
-  text-align: center;
-}
-
 
 .bröd {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -113,9 +104,57 @@ main {
   text-align: right;
   color: #000000;
   background-color: transparent;
-  margin: 0%;
-  padding-top: px; 
+  margin: 0%; 
   font-size: 15px; 
+}
+
+.line {
+  font-size: 15px;
+}
+
+
+/*Cookie monster*/
+
+.image2 {
+  width: 30%;
+  height: 30%;
+  border-radius: 15px;
+}
+
+.ok {
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border: none;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+.ok:hover {
+  background-color: #102d23;
+  color: rgb(244, 244, 244);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.ex {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+
+.wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  max-width: 400px;
+  width: 100%;
+  background-size: cover;
+  background-image: url(bakground.png);
+  border-radius: 8px;
+  padding: 15px 20px 20px;
+  display: block;
 }
 
 
@@ -277,45 +316,9 @@ a:active {
   -ms-transform: translate(-50%, -50%);
 }
 
-.wrapper {
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
-  max-width: 400px;
-  width: 100%;
-  background-size: cover;
-  background-image: url(bakground.png);
-  border-radius: 8px;
-  padding: 15px 20px 20px;
-  display: block;
-}
-
-/*Cookie monster*/
-
-.image2 {
-  width: 30%;
-  height: 30%;
-  border-radius: 15px;
-}
-
-.ok {
-  text-decoration: none;
-  padding: 10px;
-  padding-right: 50px;
-  padding-left: 50px;
-  border: none;
-  font-size: 15px;
-  border-radius: 15px;
-}
-
-.ok:hover {
-  background-color: #102d23;
-  color: rgb(244, 244, 244);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
 
 /*hover effect on Om page (webbsites and sources)*/
+
 .webbsites {
 text-decoration: none;
 size: 10px;
@@ -328,7 +331,27 @@ transition: all 0.2s ease;
 color: #24b7b0;
 }
 
-@media screen {
+/*Tomat page*/
+
+.lapsText {
+  font-size: 30px; 
+  text-align: center;
+}
+
+.tomatVid {
+  width: 30%;
+  height: 30%;
+  border: 4px solid black; 
+  border-radius: 15px;
+  position:relative;
+  left: 18%;
+  right: auto;
+}
+
+/*Mobile Phone version fix*/
+
+@media only screen and (max-width: 600px)  { /*makes it so that it need to reach a certain condition to be applied*/
+
   .header {
     padding: 10px;
   } 
@@ -337,14 +360,83 @@ color: #24b7b0;
     font-size: 35px;
   }
 
-  
+  body {
+    font-size: 15px;
+  }
+
+  .img {
+    margin-right: 5px;
+  }
+
+  .navImage {
+    width: 13px;
+    height: 13px;
+  }
+
   .navigation a .navigation a.right {
     float: none;
     text-align: center;
   }
-  .navImage {
-    width: 13px;
+
+  .navigation a.right {
+    position:static;
+    padding: 14px 43px;
   }
+
+  .bröd {
+    padding: 40px;
+  }
+
+  .bröd h1 {
+    font-size: 25px;
+  }
+  
+  .line {
+    color: transparent;
+  }
+
+  .tran {
+    padding: 10px;
+  }
+
+  .side2 {
+    font-size: 10px;
+  }
+
+  .container {
+    float: none;
+    max-width: 100%;
+  }
+
+  .bild {
+    max-width: 98%;
+    border: 3px solid #17252A;
+  }
+
+  .lapsText {
+    font-size: 13px;
+  }
+
+  .tomatVid {
+    width: 61%;
+  }
+  
+  .fin {
+    font-size: 15px;
+  }
+
+  .image2 {
+    width: 20%;
+    height: 20%;
+  }
+
+  .wrapper {
+    bottom: 20px;
+    right: 20px;
+    max-width: 300;
+    width: 80%;
+  }
+
 }
 
 
