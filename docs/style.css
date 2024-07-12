@@ -368,6 +368,14 @@ color: #24b7b0;
     margin-right: 5px;
   }
 
+  .navbar button {
+    padding: 13px 10px;    
+  }
+
+  .dropdown .dropbtn {
+    padding: 13px 8px;
+  }
+
   .navImage {
     position: static;
     width: 9px;
