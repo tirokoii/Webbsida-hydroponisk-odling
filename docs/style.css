@@ -376,9 +376,9 @@ color: #24b7b0;
 
   .navigation a {
     float: left;
-    max-width: 100%;
+    max-width: 16%;
     width: 1000px;
-    padding: 4% 4%;
+    padding: 4% 2%;
     font-size: 81%;
   }
 
