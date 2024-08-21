@@ -360,6 +360,10 @@ color: #24b7b0;
     font-size: 35px;
   }
 
+  .bröd {
+    line-height: 25px;
+  }
+
   body {
     font-size: 15px;
   }
@@ -403,7 +407,8 @@ color: #24b7b0;
   }
 
   .tran {
-    padding: 10px;
+    padding: 5px;
+    margin: 0%;
   }
 
   .side2 {
