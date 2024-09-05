@@ -1,3 +1,2 @@
-Webbsida för hydroponisk odling.
+Webbsida för hydroponisk odling skol projekt.
 
-Länk: https://tirokoii.github.io/Webbsida-hydroponisk-odling/
